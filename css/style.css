@@ -1,0 +1,425 @@
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* ---------- BRAND COLORS ---------- */
+
+:root {
+    --black: #050505;
+    --dark: #111111;
+    --gold: #d4af63;
+    --white: #ffffff;
+    --muted: #b8b8b8;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(5, 5, 5, 0.92);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(212, 175, 99, 0.12);
+}
+
+.navbar {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 0;
+}
+
+.brand img {
+    width: 85px;
+    height: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+
+/* ---------- NAV BOOK BUTTON ---------- */
+
+.book-button {
+    color: var(--black);
+    background-color: var(--gold);
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+    border: 1px solid var(--gold);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.book-button:hover {
+    background-color: transparent;
+    color: var(--gold);
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 130px 20px 60px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #191919 0%,
+            #0c0c0c 45%,
+            #050505 75%
+        );
+}
+
+.hero-logo {
+    width: 280px;
+    max-width: 70vw;
+
+    margin-bottom: 20px;
+
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.hero h1 {
+    color: var(--gold);
+
+    font-size: clamp(42px, 6vw, 78px);
+    letter-spacing: 5px;
+
+    margin-bottom: 10px;
+}
+
+.heritage {
+    color: var(--white);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 22px;
+}
+
+.tagline {
+    color: var(--muted);
+
+    font-size: clamp(18px, 2vw, 24px);
+    letter-spacing: 2px;
+
+    margin-bottom: 35px;
+}
+
+
+/* ---------- HERO BUTTON ---------- */
+
+.hero-button {
+    display: inline-block;
+
+    background-color: var(--gold);
+    color: var(--black);
+
+    text-decoration: none;
+
+    padding: 15px 30px;
+
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    border: 1px solid var(--gold);
+
+    transition: all 0.25s ease;
+}
+
+.hero-button:hover {
+    background-color: transparent;
+    color: var(--gold);
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .brand img {
+        width: 70px;
+    }
+
+    .book-button {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+
+    .hero-logo {
+        width: 220px;
+    }
+
+    .hero h1 {
+        letter-spacing: 3px;
+    }
+
+    .heritage {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+/* ---------- SERVICES ---------- */
+
+.services {
+    background-color: #0b0b0b;
+    padding: 100px 20px;
+}
+
+.services-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-label {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+}
+
+.services h2 {
+    font-size: clamp(32px, 4vw, 50px);
+    margin-bottom: 18px;
+}
+
+.section-intro {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    grid-column: span 2;
+
+    background-color: #111111;
+    border: 1px solid #242424;
+    padding: 38px 25px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.service-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.service-card {
+    background-color: #111111;
+    border: 1px solid #242424;
+
+    padding: 38px 25px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+}
+
+.service-card h3 {
+    color: var(--white);
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+
+.service-english {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.service-duration {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.service-price {
+    color: var(--gold);
+    font-size: 27px;
+    font-weight: 800;
+}
+
+
+/* ---------- SERVICES MOBILE ---------- */
+
+@media (max-width: 800px) {
+
+    .services {
+        padding: 75px 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card,
+    .service-card:nth-child(4) {
+        grid-column: auto;
+    }
+}
+/* ---------- ABOUT ---------- */
+
+.about {
+    background-color: var(--black);
+    padding: 100px 20px;
+}
+
+.about-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-content h2 {
+    font-size: clamp(32px, 4vw, 50px);
+    margin-bottom: 24px;
+}
+
+.about-content p {
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 18px;
+    max-width: 700px;
+}
+
+.about-highlight {
+    border: 1px solid var(--gold);
+
+    min-height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #0d0d0d;
+}
+
+.about-year {
+    color: var(--gold);
+
+    font-size: clamp(65px, 8vw, 110px);
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+.about-highlight p {
+    margin-top: 12px;
+
+    color: var(--white);
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+/* ---------- ABOUT MOBILE ---------- */
+
+@media (max-width: 800px) {
+
+    .about {
+        padding: 75px 20px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-highlight {
+        min-height: 220px;
+    }
+}
