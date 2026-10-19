@@ -2,11 +2,66 @@
 <html lang="sq">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Frizer MODA | Since 1992</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="css/style.css">
+    <title>
+        Frizer MODA | Barbershop në Gjakovë | Since 1992
+    </title>
+
+    <meta
+        name="description"
+        content="Frizer MODA është barbershop në Gjakovë që nga viti 1992. Qethje, rroje, rregullim mjekre, stilim flokësh dhe rezervime online."
+    >
+
+    <meta
+        name="keywords"
+        content="Frizer MODA, frizer Gjakovë, barber Gjakovë, barbershop Gjakovë, qethje Gjakovë, rroje Gjakovë"
+    >
+
+    <meta name="author" content="Frizer MODA">
+
+    <meta name="robots" content="index, follow">
+
+
+    <!-- FAVICON -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/logo.png"
+    >
+
+
+    <!-- SOCIAL MEDIA PREVIEW -->
+    <meta
+        property="og:title"
+        content="Frizer MODA | Since 1992"
+    >
+
+    <meta
+        property="og:description"
+        content="Traditë. Precizitet. Stil. Barbershop në Gjakovë që nga viti 1992."
+    >
+
+    <meta
+        property="og:image"
+        content="images/logo.png"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 </head>
 
 <body>
@@ -24,11 +79,23 @@
                 <li><a href="#about">Rreth Nesh</a></li>
                 <li><a href="#gallery">Galeria</a></li>
                 <li><a href="#contact">Kontakti</a></li>
+                <li class="mobile-booking">
+    <a href="#booking">Rezervo Terminin</a>
+</li>
             </ul>
 
             <a href="#booking" class="book-button">
-                Rezervo Terminin
-            </a>
+    Rezervo Terminin
+</a>
+
+<button
+    class="menu-toggle"
+    id="menu-toggle"
+    aria-label="Hap menunë"
+    aria-expanded="false"
+>
+    ☰
+</button>
 
         </nav>
     </header>
@@ -165,27 +232,27 @@
         <div class="gallery-grid">
 
             <div class="gallery-item">
-                <img src="images/gallery/gallery-1.jpg" alt="Frizer MODA haircut">
+                <img src="images/gallery/gallery-1.jpg" alt="Frizer MODA haircut" loading="lazy">
             </div>
 
             <div class="gallery-item">
-                <img src="images/gallery/gallery-2.jpg" alt="Frizer MODA haircut">
+                <img src="images/gallery/gallery-2.jpg" alt="Frizer MODA haircut" loading="lazy">
             </div>
 
             <div class="gallery-item">
-                <img src="images/gallery/gallery-3.jpg" alt="Frizer MODA haircut">
+                <img src="images/gallery/gallery-3.jpg" alt="Frizer MODA haircut" loading="lazy">
             </div>
 
             <div class="gallery-item">
-                <img src="images/gallery/gallery-4.jpg" alt="Frizer MODA haircut">
+                <img src="images/gallery/gallery-4.jpg" alt="Frizer MODA haircut" loading="lazy">
             </div>
 
             <div class="gallery-item">
-                <img src="images/gallery/gallery-5.jpg" alt="Frizer MODA haircut">
+                <img src="images/gallery/gallery-5.jpg" alt="Frizer MODA haircut" loading="lazy">
             </div>
 
             <div class="gallery-item">
-                <img src="images/gallery/gallery-6.jpg" alt="Frizer MODA haircut">
+                <img src="images/gallery/gallery-6.jpg" alt="Frizer MODA haircut" loading="lazy">
             </div>
 
         </div>
@@ -225,15 +292,24 @@
             <h2>Na Vizitoni</h2>
 
             <p class="contact-intro">
-                Ju mirëpresim në Frizer MODA në Gjakovë.
-                Për rezervime, përdorni sistemin tonë online.
+                Na gjeni në qendër të Gjakovës. Për rezervime mund të përdorni
+                sistemin tonë online, të na telefononi ose të na kontaktoni në WhatsApp.
             </p>
 
             <div class="contact-details">
 
                 <div class="contact-item">
-                    <span>LOKACIONI</span>
-                    <p>Gjakovë, Kosovë</p>
+                    <span>ADRESA</span>
+                    <p>Mic Sokoli 33</p>
+                    <p>50000 Gjakovë, Kosovë</p>
+                </div>
+
+                <div class="contact-item">
+                    <span>TELEFONI</span>
+
+                    <a href="tel:+38344611974">
+                        +383 44 611 974
+                    </a>
                 </div>
 
                 <div class="contact-item">
@@ -257,24 +333,47 @@
 
             </div>
 
+
+            <div class="contact-buttons">
+
+                <a
+                    href="tel:+38344611974"
+                    class="contact-button"
+                >
+                    Na Telefononi
+                </a>
+
+                <a
+                    href="https://wa.me/38344611974"
+                    class="contact-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp
+                </a>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Mic+Sokoli+33+Gjakova+50000"
+                    class="contact-button contact-button-outline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Hap në Google Maps
+                </a>
+
+            </div>
+
         </div>
 
 
-        <div class="contact-cta">
+        <div class="contact-map">
 
-            <p class="contact-cta-small">
-                GATI PËR NJË PAMJE TË RE?
-            </p>
-
-            <h3>Rezervo Terminin Tënd</h3>
-
-            <p>
-                Zgjidh shërbimin, datën dhe orën që ju përshtatet.
-            </p>
-
-            <a href="#booking" class="hero-button">
-                Rezervo Terminin
-            </a>
+            <iframe
+                src="https://www.google.com/maps?q=Mic+Sokoli+33,+Gjakova,+50000&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Lokacioni i Frizer MODA në Gjakovë">
+            </iframe>
 
         </div>
 
