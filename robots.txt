@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://klitixharavina.github.io/frizer-moda-website/sitemap.xml
+Sitemap: https://frizermoda.com/sitemap.xml

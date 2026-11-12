@@ -6,7 +6,7 @@ The website was designed and developed to modernize the barbershop's online pres
 
 ## Live Website
 
-https://klitixharavina.github.io/frizer-moda-website/
+https://frizermoda.com/
 
 ## Features
 
